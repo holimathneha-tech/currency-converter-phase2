@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter - Phase 2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🌍 Currency Converter (Phase 2)</h2>
+
+    <!-- Input Amount -->
+    <input type="number" id="amount" placeholder="Enter amount" aria-label="Enter amount">
+
+    <!-- From Currency -->
+    <select id="fromCurrency" aria-label="Select source currency"></select>
+
+    <!-- Swap Button -->
+    <button id="swapBtn" aria-label="Swap currencies">↔️</button>
+
+    <!-- To Currency -->
+    <select id="toCurrency" aria-label="Select target currency"></select>
+
+    <!-- Convert Button -->
+    <button id="convertBtn" aria-label="Convert amount">Convert</button>
+
+    <!-- Refresh Button -->
+    <button id="refreshBtn" aria-label="Refresh rates">🔄 Refresh Rates</button>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+    <!-- History -->
+    <h3>Recent Conversions</h3>
+    <ul id="history"></ul>
+    <button id="clearHistoryBtn">Clear History</button>
+
+    <!-- Chart -->
+    <h3>7-Day Rate Trend</h3>
+    <canvas id="rateChart"></canvas>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
